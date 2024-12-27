@@ -1,9 +1,8 @@
-import mongoose,{Schema,model} from "mongoose";
-import { type } from "os";
+import mongoose, { Schema, model } from "mongoose";
 
 const schema=new Schema({
     message:String,
-    user:{type:mongoose.Types.ObjectId,
+    user:{type:mongoose.Types.ObjectId, 
         ref:"User"
     }
 })

@@ -8,9 +8,9 @@ import userRouter from './src/modules/user/user.router.js'
 import session from 'express-session'
 import mongoSession from 'connect-mongodb-session'
 import cors from 'cors'
-let MongoDBSore = mongoSession(session)
 const app = express() 
 const port = process.env.PORT || 3000 
+let MongoDBStore = mongoSession(session)
 let store = new MongoDBStore({
     uri: 'mongodb://127.0.0.1:27017/sara7a',
     collection: 'mySessions'
